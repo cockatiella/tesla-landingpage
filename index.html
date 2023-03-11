@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
     <link rel="stylesheet" href="helpers.css">
     <link rel="stylesheet" href="grid.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <title>Document</title>
 </head>
 <style>
@@ -31,6 +33,12 @@
     @media screen and (max-width: 768px) {
         .hero {
             background-image: url('./images/hero-3.jpg');
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        .hamburger {
+            display: none;
         }
     }
 </style>
@@ -57,8 +65,8 @@
                 <div class="column right">
                     <p class="navbar-item desktop has-text-black">SHOP </p>
                     <p class="navbar-item desktop has-text-black">SIGN IN </p>
-                    <figure class="navbar-item image has-text-black center">
-                        <i class="fas fa-bars"></i>
+                    <figure class="navbar-item image has-text-black center hamburger">
+                        <i class="fas fa-bars hamburger" style="cursor: pointer"></i>
                     </figure>
                 </div>
             </div>
@@ -117,6 +125,7 @@
 
 
     <script src="https://kit.fontawesome.com/d1bb85e981.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
